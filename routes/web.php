@@ -1,9 +1,9 @@
 <?php
 
 
-Route::get('/', 'StaticPagesController@home');
-Route::get('/help', 'StaticPagesController@help');
-Route::get('/about', 'StaticPagesController@about');
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/faq', 'StaticPagesController@help')->name('help');//没有路由渲染=>404Notfound
+Route::get('/about', 'StaticPagesController@about')->name('about');
 /*
 |--------------------------------------------------------------------------
 | Web Routes
