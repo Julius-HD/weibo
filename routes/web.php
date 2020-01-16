@@ -6,6 +6,7 @@ Route::get('/faq', 'StaticPagesController@help')->name('help');//没有路由渲
 Route::get('/about', 'StaticPagesController@about')->name('about');
 
 Route::get('signup', 'UsersController@create')->name('signup');
+Route::resource('users', 'UsersController');
 /*
 |--------------------------------------------------------------------------
 | Web Routes
