@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>@yield('title', 'Weibo App') - Laravel 入门教程</title>
-    <link rel="stylesheet" href="/css/app.css"><!--引入 public/css/app.css 样式文件。-->
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}"><!--引入 public/css/app.css 样式文件,让布局更美观-->
   </head>
   <body>
 
