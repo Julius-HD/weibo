@@ -4,6 +4,8 @@
 Route::get('/', 'StaticPagesController@home')->name('home');
 Route::get('/faq', 'StaticPagesController@help')->name('help');//没有路由渲染=>404Notfound
 Route::get('/about', 'StaticPagesController@about')->name('about');
+
+Route::get('signup', 'UsersController@create')->name('signup');
 /*
 |--------------------------------------------------------------------------
 | Web Routes
