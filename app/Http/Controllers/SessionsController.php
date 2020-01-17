@@ -13,7 +13,7 @@ class SessionsController extends Controller
         return view('sessions.create');
     }
 
-    public function store(Request $request)
+    public function store(Request $request)//login
     {
        $credentials = $this->validate($request, [
            'email' => 'required|email|max:255',
@@ -28,7 +28,7 @@ class SessionsController extends Controller
            return redirect()->back()->withInput();
        }
     }
-    public function destroy()
+    public function destroy()//logout
     {
         Auth::logout();
         session()->flash('success', '您已成功退出！');
